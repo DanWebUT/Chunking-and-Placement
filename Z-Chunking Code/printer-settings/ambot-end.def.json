@@ -1,0 +1,41 @@
+{
+  "version": 2,
+  "name": "C3DP AMBOT Robot_settings",
+  "inherits": "fdmprinter",
+  "metadata": {
+    "visible": true,
+    "author": "Lucas GM",
+    "manufacturer": "AMBOTS",
+    "file_formats": "text/x-gcode"
+  },
+
+  "overrides": {
+    "machine_name": { "default_value": "C3DP AMBOT Robot" },
+    "machine_heated_bed": { "default_value": false },
+    "machine_width": { "default_value": 300 },
+    "machine_height": { "default_value": 300 },
+    "machine_depth": { "default_value": 300 },
+    "machine_center_is_zero": { "default_value": false },
+    "machine_nozzle_size": { "default_value": 1.0 },
+    "material_diameter": { "default_value": 1.75 },
+    "machine_head_with_fans_polygon": {
+      "default_value": [
+        [0, 0],
+        [0, 0],
+        [0, 0],
+        [0, 0]
+      ]
+    },
+    "infill_sparse_density": { "default_value": 20 },
+    "gantry_height": { "default_value": 55 },
+    "adhesion_type": { "default_value": "none" },
+    "machine_gcode_flavor": { "default_value": "RepRap (RepRap)" },
+
+    "machine_start_gcode": {
+      "default_value": ""
+    },
+    "machine_end_gcode": {
+      "default_value": "M104 S0 ;extruder heater off\nG91 ;relative positioning\nG1 E-6 F300  ;retract the filament a bit before lifting the nozzle, to release some of the pressure\nG90 ;absolute positioning\nG28 ;autohome\nM84 ;steppers off"
+    }
+  }
+}

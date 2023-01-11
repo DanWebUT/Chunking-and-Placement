@@ -1,0 +1,23 @@
+{
+  "constants": {
+    "seed_chunk": 150,
+    "border_chunk_slopewidth": 50.0,
+    "buildplate": 300,
+    "center_chunkwidth": 150
+  },
+  "bounds": {
+    "lower_bound_slope_angle": 0.34906555,
+    "upper_bound_slope_angle": 1.570795,
+    "maximum_build_depth": 260,
+    "maximum_width": 250,
+    "minimum_chunking_length": 150
+  },
+
+  "machine_parameters": {
+    "build_depth": 260,
+    "printhead_slope": 0.523598333,
+    "width": 100,
+    "printhead_depth": 25,
+    "speed": 0.1
+  }
+}
